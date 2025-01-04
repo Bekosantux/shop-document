@@ -18,12 +18,12 @@ const config = {
   url: 'https://bekosan.booth.pm/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/ShopDoc/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Bekosantux', // Usually your GitHub org/user name.
-  projectName: 'BekoShopDocuments', // Usually your repo name.
+  projectName: 'ShopDoc', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
