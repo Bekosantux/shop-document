@@ -32,11 +32,11 @@ Local_ の接頭辞がついているものはローカル動作です。
 - HBG/Local_AdjustingRadius_Bool  
 心音範囲を変更中かどうかのBool値。音源範囲を示す球の表示に使われます。
 
-- HBG/Local_FullHR_Float
+- HBG/Local_FullHR_Float  
 HRが0～1の範囲に変換されたFloat値。高精度で同期されます。  
 **改変におすすめです。** 顔の赤みを変えるなど、心拍数に比例したギミックなどを組む際に使用できます。
 
-- HBG/Local_Mute_Bool
+- HBG/Local_Mute_Bool  
 自分の心音をミュートにするかどうかのBool値。
 
 - HBG/Local_ListenOwnHB_Bool  
@@ -45,7 +45,7 @@ HRが0～1の範囲に変換されたFloat値。高精度で同期されます�
 - HBG/Local_nSoundRadius  
 アバタースケーリングに心音範囲を追従させるために使われます。
 
-- HBG/Local_nBeatTime
+- HBG/Local_nBeatTime  
 心音の再生時間を正規化した数値が入ります。  
 **改変におすすめです。** アニメーションのMotion Timeに使用することで、任意のアニメーションを心音に合わせて再生することができます。
 
