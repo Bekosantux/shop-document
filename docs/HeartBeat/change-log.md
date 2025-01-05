@@ -6,6 +6,7 @@ sidebar_position: 999
 <hr/>
 2025/1/4 v2.1.0
 - ローカルミュート機能の追加
+- 心拍数カウンターのみのプレハブを追加
 - オプションプレハブを追加
 - パラメーター `HBG/Local_Mute_Bool` `HBG/Local_nBeatTime` を追加
 - アニメーターをマニュアルとOSCで共通化
