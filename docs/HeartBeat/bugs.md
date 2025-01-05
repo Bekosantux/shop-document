@@ -19,7 +19,7 @@ sidebar_position: 5
 </details>
 
 ### 不具合が発生するギミック
-[IntParameterCompressor](https://booth.pm/ja/items/5575099)
+[IntParameterCompressor](https://booth.pm/ja/items/5575099)  
 心拍数が他のプレイヤーに聞こえなくなります。  
 Compressorを抜く必要があります（現時点で共存はできません）。
 
