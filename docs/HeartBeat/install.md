@@ -13,16 +13,27 @@ sidebar_position: 1
 1. *BekoShop/HeartBeat_Gimmick/Prefabs* の中にあるプレハブをアバター直下に配置します。OSC機能を利用する場合はHeartBeat_OSC、そうでなければHeartBeat_Manualプレハブを選択してください。
 
 1. プレハブ内の **AudioSources(プレハブ本体ではない)** をアバターの胸あたりに配置します。  
-とりあえず配置しておき、後でVRChat内での範囲調整をおすすめします。
+とりあえず配置しておき、後でVRChat内での範囲調整をすることをおすすめします。  
 ![音源の配置](contents\HBSetting_d.png)
 :::caution
 アニメーションによって上書きされてしまうため、Unity上での範囲調整はできません。VRChat内でパイメニューから操作してください。
 :::
 
-1. HRCounter をほっぺたや頭上など心拍数を表示したい場所に配置します。デフォルトではHeadボーンに追従する設定になっています。  
+1. HR_Counter をほっぺたや頭上など心拍数を表示したい場所に配置します。デフォルトではHeadボーンに追従する設定になっています。  
+デフォルトでは表示されたままですが、心拍数が0の場合は自動で非表示になります。  
 ![心拍計の配置](contents\HBSetting_b.png)
 
 **導入完了！**
+<details>
+<summary>心拍数カウンターを増やしたい場合は？</summary>
+
+HR_Counterオブジェクトを複製するだけでは機能しません。CounterOnlyプレハブを使用するようにしてください。  
+CounterOnlyプレハブは心音を鳴らさず、心拍数のみを表示します。
+:::caution
+CounterOnlyプレハブはいくつでも好きな場所に配置することができますが、必ず本体と一緒に導入してください。  
+単体では動作しません。
+:::
+</details>
 
 <details>
 <summary>オプションプレハブについて</summary>
@@ -54,4 +65,7 @@ sidebar_position: 1
 
 ### 心音の変え方
 ![心音の変え方](contents\HBSetting_c.png)  
-*Assets/BekoShop/HeartBeat_Gimmick/Resources/Sounds* にA,B,C,Dの4種類の心音が2つに分割されて入っています。プレハブ内のAudio Sourceに0と1に対応するものを適用してください。0→1の順番で繰り返し再生されるように設計していますが、お好みで違う種類・順番の心音を適用しても大丈夫です。
+*Assets/BekoShop/HeartBeat_Gimmick/Resources/Sounds* にA,B,C,Dの4種類の心音が2つに分割されて入っています。プレハブ内のAudio Sourceに0と1に対応するものを適用してください。0→1の順番で繰り返し再生されるように設計していますが、お好みで違う種類・順番の心音を適用しても大丈夫です。  
+聞こえ方については動画を御覧ください。  
+
+<iframe src="https://www.youtube.com/embed/C5gtQQ9TYmc" title="心音サンプル" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
