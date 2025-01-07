@@ -69,3 +69,6 @@ CounterOnlyプレハブはいくつでも好きな場所に配置することが
 聞こえ方については動画を御覧ください。  
 
 <iframe src="https://www.youtube.com/embed/C5gtQQ9TYmc" title="心音サンプル" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+### 心拍数カウンターの見た目の変え方
+BekoShop/HeartBeat_Gimmick/RED_SIM_modd/Materials にあるマテリアルと入れ替えることで見た目を変えることができます。
