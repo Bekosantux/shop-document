@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.MainSidebar.category.なめらか心音ギミック": {
+    "message": "Natural Heartbeat System",
+    "description": "The label for category なめらか心音ギミック in sidebar MainSidebar"
+  },
+  "sidebar.MainSidebar.category.なめらか心音ギミック.link.generated-index.description": {
+    "message": "https://bekosan.booth.pm/items/5316535",
+    "description": "The generated-index page description for category なめらか心音ギミック in sidebar MainSidebar"
+  },
+  "sidebar.MainSidebar.category.Sig Breath Mod": {
+    "message": "Sig Breath Mod",
+    "description": "The label for category Sig Breath Mod in sidebar MainSidebar"
+  },
+  "sidebar.MainSidebar.category.Sig Breath Mod.link.generated-index.description": {
+    "message": "https://bekosan.booth.pm/items/4792153 \n Under construction!",
+    "description": "The generated-index page description for category Sig Breath Mod in sidebar MainSidebar"
+  },
+  "sidebar.MainSidebar.category.Virtual Celestial Renderer": {
+    "message": "Virtual Celestial Renderer",
+    "description": "The label for category Virtual Celestial Renderer in sidebar MainSidebar"
+  },
+  "sidebar.MainSidebar.category.Virtual Celestial Renderer.link.generated-index.description": {
+    "message": "https://bekosan.booth.pm/items/6133882 \n Under construction!",
+    "description": "The generated-index page description for category Virtual Celestial Renderer in sidebar MainSidebar"
+  },
+  "sidebar.MainSidebar.category.OSCデジタル時計": {
+    "message": "OSCデジタル時計",
+    "description": "The label for category OSCデジタル時計 in sidebar MainSidebar"
+  },
+  "sidebar.MainSidebar.category.OSCデジタル時計.link.generated-index.description": {
+    "message": "https://bekosan.booth.pm/items/3721112 \n Under construction!",
+    "description": "The generated-index page description for category OSCデジタル時計 in sidebar MainSidebar"
+  }
+}
