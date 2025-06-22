@@ -16,6 +16,17 @@ import TabItem from '@theme/TabItem';
         PulsoidとHRtoVRChatを組み合わせる方法と、それを介さず直接送信する方法があります。（それ以外にもありますがここでは省略します）  
         よろしければこちらも参考にしてください。  
         [VRChatに心拍数を送る時の環境メモ](https://note.com/bekosan/n/nf6a976867771)
+
+        <hr/>
+        お手持ちのスマートウォッチを介したPulsoidを使用する方法と、Bluetooth LE対応の心拍計を使用する方法があります。  
+        ||Pulsoid|Bluetooth LE|
+        |:---|:---|:---|
+        |長所|スマートウォッチをそのまま使用可能|心拍数取得精度が良い<br />電池が長く持つ <br />|
+        |短所|スマートウォッチの電池持ちが悪い<br />導入と起動が面倒|導入と起動が簡単|
+
+        MibandやApple Watchなどのスマートウォッチをお持ちの場合は、まずはPulsoidを試してみることをオススメします。  
+        機能性ではBLEの方が優れているので、お気に召したらBLE対応の心拍計を購入してみるのも良いでしょう。
+
     </TabItem>
     <TabItem value="pulsoid" label="Pulsoid">
         :::caution
@@ -34,12 +45,19 @@ import TabItem from '@theme/TabItem';
             1. https://hrtovrchat.fortnite.lol/download#h.ha8hgsfz56g2  
             から一番上のWindowsのLauncherをダウンロード
 
-            1. Launcherを起動したらConfigタブを開き、hrTypeを pulsoidsocket に変更して、SAVEボタンを押す。
+            1. Launcherを起動したらConfigタブを開き、hrTypeを pulsoidsocket に変更して、SAVEボタンを押す。  
+            ⚠️**すべて小文字です！前後に空白が入らないように注意してください。**⚠️  
             ![](contents\HRtoVRChat_a.png)
 
-            1. 加えてpulsoidkeyを選び、さっきコピーしたトークンを貼り付け、SAVEボタンを押す。
+            1. 加えてpulsoidkeyを選び、先ほどコピーしたトークンを貼り付け、SAVEボタンを押す。  
+            ⚠️**hrTypeにはトークンは貼り付けません！**⚠️  
 
             1. 設定が完了しました！Pulsoidを起動した状態でProgramタブからSTARTボタンを押すとOSC信号がVRChatに送信されます。
+
+            :::note
+            「HRtoVRChat_OSC is not installed! Please navigate to the Updates tab and install it.」  
+            というエラーが出た場合は、Updatesタブから「UPDATE SOFTWARE」ボタンを押してください。
+            :::
     </TabItem>
     <TabItem value="ble" label="Bluetooth LE">
         :::note
@@ -54,7 +72,8 @@ import TabItem from '@theme/TabItem';
 
         1. WindowsにBLE心拍計をペアリングします。  
         :::caution
-        Windows11の場合、「Bluetoothデバイスの検出」設定を「詳細」に変更しないと一覧に表示されないことがあります。
+        Windows11 22H2, 23H2の場合、「Bluetoothデバイスの検出」設定を「詳細」に変更してください。  
+        24H2では、Bluetoothデバイスの検索で、Bluetoothデバイスのリストを下にスクロールして「すべてのデバイスを表示」を選択してください。
         :::
 
         2. 画面右のReleaseからダウンロードしたzipを展開して、exeファイルを実行するだけで使えます。（数字が出てきたら成功。ウィンドウを閉じても裏で動きます。）
