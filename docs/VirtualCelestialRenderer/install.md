@@ -12,3 +12,6 @@ sidebar_position: 0
 ## Aセットの方は[こちら](../Settings_A)
 
 ## B、Cセットの方は[こちら](../Settings_BC)
+
+
+![Showcase](contents/Showcase_0.png)
