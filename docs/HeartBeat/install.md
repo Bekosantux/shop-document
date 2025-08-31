@@ -11,27 +11,34 @@ sidebar_position: 1
 - VRC Heart Rate 最新バージョン
 
 ## 手順
-1. *BekoShop/HeartBeat_Gimmick/Prefabs* の中にあるプレハブをアバター直下に配置します。OSC機能を利用する場合はHeartBeat_OSC、そうでなければHeartBeat_Manualプレハブを選択してください。  
-`VRCHeartRate_Core` というプレハブが自動的に同階層に配置されます。このプレハブは心音ギミックの動作に必須なので、削除しないでください。このプレハブはアバター内であればどこに動かしても問題ありません。
+1. *BekoShop/HeartBeat_Gimmick/Prefabs* の中にあるプレハブをアバター直下に配置します。OSC機能を利用する場合は `HeartBeat_OSC`、そうでなければ `HeartBeat_Manual` プレハブを選択してください。  
+プレハブをアバター内に配置すると、`VRCHeartRate_Core` というプレハブが自動的に同階層に配置されます。このプレハブは心音ギミックの動作に必須なので、削除しないでください。このプレハブはアバター内であればどこに動かしても問題ありません。
 
-1. プレハブ内の **AudioSources(プレハブ本体ではない)** をアバターの胸の少し下あたりに配置します。  
+1. プレハブ内の **`AudioSources`(プレハブ本体ではない)** をアバターの胸の少し下あたりに配置します。  
 とりあえず配置しておき、後でVRChat内での範囲調整をすることをおすすめします。  
 ![音源の配置](contents\HBSetting_d.png)
 :::caution
 アニメーションによって上書きされてしまうため、Unity上での範囲調整はできません。VRChat内で聞こえ方を確認しながら、パイメニューから操作してください。
 :::
 
-1. HeartRateCounter をほっぺたや頭上など心拍数を表示したい場所に配置します。デフォルトではHeadボーンに追従する設定になっています。  
+1. **`HR_Counter`** をほっぺたや頭上など心拍数を表示したい場所に配置します。デフォルトではHeadボーンに追従する設定になっています。  
 デフォルトでは表示されたままですが、心拍数が0の場合は自動で非表示になります。  
-必要に応じてステンシルの設定が可能です。[参考](https://lilxyzw.github.io/lilToon/ja_JP/advanced/stencil.html)
+ステンシルを設定すると、顔や髪に隠れるのを防ぐことが可能です。[参考](https://lilxyzw.github.io/lilToon/ja_JP/advanced/stencil.html)
 ![心拍計の配置](contents\HBSetting_b.png)
 
-**導入完了！**
-<details>
-<summary>心拍数カウンターを別の場所にも置きたい場合は？</summary>
+:::caution
+心拍数カウンターのTransform(特にスケール)を変更する場合、HeartRateCounterの子であるHR_Counterの方を変更してください。  
+どちらかのXYZスケールが揃っていないと、大きく歪んでしまう場合があります。
+:::
 
-HeartRateCounterオブジェクトを複製するか、プレハブ一覧から同じものをアバターの任意の位置に配置してください。  
-動かしたあとは、 `MA Bone Proxy` コンポーネントでボーン追従先を変更してください。
+
+**導入完了！**
+
+<details>
+    <summary>心拍数カウンターを別の場所にも置きたい場合は？</summary>
+
+    プレハブ一覧から `HeartRateCounter` をアバターにD&Dし、 `HR_Counter` を任意の位置に配置してください。  
+    動かしたあとは、 `MA Bone Proxy` コンポーネントでボーン追従先を変更してください。
 </details>
 
 <details>
@@ -73,4 +80,4 @@ HeartRateCounterオブジェクトを複製するか、プレハブ一覧から�
 <iframe src="https://www.youtube.com/embed/C5gtQQ9TYmc" title="心音サンプル" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 ### 心拍数カウンターの見た目の変え方
-BekoShop/HeartBeat_Gimmick/RED_SIM_modd/Materials にあるマテリアルと入れ替えることで見た目を変えることができます。
+BekoShop/HeartBeat_Gimmick/RED_SIM_mod/Materials にあるマテリアルと入れ替えることで見た目を変えることができます。
