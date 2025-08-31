@@ -12,8 +12,8 @@ sidebar_position: 1
 
 ### スクリプトの設定
 最初に、コア機能を自動的にインストールするためのスクリプトを設定します。これがないとギミックが動きません！  
-1. *"Asset/VRC Heart Rate/Assets/SampleScript"* プレハブを開き、 "Auto Module Placer" コンポーネントをコピーする。  
-    マニュアル操作版の場合は _Manual が付いている方をコピーします。
+1. *"Packages/VRC Heart Rate/Assets" にある `SampleScript` プレハブを開き、 `Auto Module Placer` コンポーネントをコピーする。  
+    マニュアル操作版の場合は `_Manual` が付いている方をコピーします。
 
 1. ギミックのルートオブジェクトに「新しいコンポーネントとして貼り付け」します。
 
@@ -21,44 +21,47 @@ sidebar_position: 1
     (基本的には "FX" のみになると思いますが、例えば呼吸アニメーションは "Additive" になります。)
 
 1. 「オプションが一つも配置されていません。」警告が消えたら、「強制チェック＆配置ボタン」を押します。  
-    "OSCHeartRate_Core" プレハブが同階層に出現し、その子に指定したレイヤー名のオブジェクトが生成されたら成功です。
+    `OSCHeartRate_Core` プレハブが同階層に出現し、その子に指定したレイヤー名のオブジェクトが生成されたら成功です。
 
 ### パラメーターについて
 使用頻度の高いパラメーターのリストと説明は以下の通りです。  
-値の上書きはしないでください。
+値は読み取り専用にし、上書きしないでください。
 
-- VRCOSC/Heartrate/Value
+- `VRCOSC/Heartrate/Value`
   - 型: Int
   - 説明: VRCOSCから送信された整数の心拍数がそのまま入ります。  
     一定の心拍数を条件としたギミックを作成する際に使用できます。
 
-- VRCHR/Local_FullHR_Float
+- `VRCHR/Local_FullHR_Float`
   - 型: Float
-  - 説明: Intで[0,255]の心拍数をFloatで[0.0,1.0]に変換した値です。  
-    心拍数に比例するようなギミックを作成する際に使用できます。
+  - 説明: Intで[0,255]の心拍数をFloatで[0.0,1.0]にマッピングした値です。  
+    Motion Timeなど、心拍数に比例するようなギミックを作成する際に使用できます。
 
-- VRCHR/Local_CyclePhase_Float
+- `VRCHR/Local_CyclePhase_Float`
   - 型: Float
   - 説明: 鼓動1ループの進行度を[0,1]で表した値です。  
     例えば、心拍数が60bpmの場合、1秒で0から1まで変化し、次の1秒でまた0に戻ります。
 
-- VRCHR/Local_Trigger
+- `VRCHR/Local_Trigger`
   - 型: Bool
   - 説明: 鼓動の1ループの開始時に1フレームのみTrueになります。  
     確実に1ループの開始を検知したい場合に使用できます。
 
 使用不推奨の内部パラメーターは以下の通りです。
-- VRCHR/ManualHR_Float
+
+- `VRCHR/ManualHR_Float`
   - 型: Float
   - 説明: VRC内でラジアルパペットから操作されたパラメーターが入ります。0.0で0bpm、0.1953125で50bpm、1.0で177bpmにマッピングされます。  
     直接使用することは推奨しません。代わりに "VRCHR/Local_FullHR_Float" を使用してください。
 
-- VRCHR/Blend
+- `VRCHR/Blend`
   - 型: Float
   - 説明: Direct Blend Tree を有効化するために使用されます。
 
-*"Asset/VRC Heart Rate/Assets/Prefabs/VRCHeartRate_Core"* のプレハブに、完全なパラメーターのリストがあります。
+*"Packages/VRC Heart Rate/Assets/Prefabs"* にある `VRCHeartRate_Core` のプレハブに、完全なパラメーターのリストがあります。
 
 ### 注意事項
-- VRC Heart Rate を用いたギミックを公開する際は、Boothの商品ページなどに必ず当アセットをインストールするためのリンクを記載してください。
+VRC Heart Rate を用いたギミックを公開する際は、必ず
+- VRC Heart Rate のインストールを促してください。
+- Boothの商品ページなどに当アセットをインストールするためのリンクを記載してください。
 - ダウンロードファイルに [unitypackage版のインストーラ](/file/VRC%20Heart%20Rate%20Installer.unitypackage) を同梱してください。このパッケージをインポートすると、自動的に最新版がインストールされます。
