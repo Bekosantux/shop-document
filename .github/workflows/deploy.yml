@@ -29,6 +29,7 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     needs: build
+    if: github.ref == 'refs/heads/main'
     permissions:
       pages: write
       id-token: write
@@ -43,7 +44,6 @@ jobs:
 
   deploy-preview:
     name: Deploy Preview to GitHub Pages
-    needs: build
     if: github.ref == 'refs/heads/main-preview'
     permissions:
       contents: write
@@ -63,6 +63,8 @@ jobs:
       
       - name: Build website for preview
         run: npm run build
+        env:
+          DOCUSAURUS_BASE_URL: /shop-document/preview/
         
       - name: Deploy to gh-pages (preview subdirectory)
         uses: peaceiris/actions-gh-pages@v3
