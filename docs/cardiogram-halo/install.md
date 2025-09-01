@@ -8,7 +8,7 @@ sidebar_position: 1
 - Unity 2022.3.22f1
 - VRCSDK 最新バージョン
 - Modular Avatar 最新バージョン
-- [VRC Heart Rate](/ShopDoc/VRCHeartRate) 最新バージョン
+- [VRC Heart Rate](/category/vrc-heart-rate/) 最新バージョン
 
 ## 手順
 ---
