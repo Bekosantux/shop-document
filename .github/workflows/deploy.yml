@@ -4,14 +4,15 @@ on:
   push:
     branches:
       - main
+      - main-preview
 
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: npm
@@ -25,9 +26,11 @@ jobs:
         with:
           path: build
 
-  deploy:
-    name: Deploy to GitHub Pages
+  # メインサイトのデプロイ（mainブランチのみ）
+  deploy-main:
+    name: Deploy Main Site
     needs: build
+    if: github.ref == 'refs/heads/main'
     permissions:
       pages: write
       id-token: write
@@ -38,4 +41,35 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
+
+  # プレビューサイトのデプロイ（main-previewブランチのみ）
+  deploy-preview:
+    name: Deploy Preview Site
+    if: github.ref == 'refs/heads/main-preview'
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build website for preview
+        run: npm run build
+        
+      - name: Deploy to gh-pages (preview subdirectory)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          destination_dir: preview
+          keep_files: true
