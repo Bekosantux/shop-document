@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3 {
+        fill: #fff;
+      }
+
+      .st4 {
+        fill: #ffff89;
+      }
+
+      .st1, .st5 {
+        stroke: #fff;
+        stroke-linecap: square;
+        stroke-miterlimit: 10;
+        stroke-width: 9px;
+      }
+
+      .st2 {
+        font-family: ErasITC-Demi, 'Eras Demi ITC';
+        font-size: 64px;
+        font-weight: 300;
+        letter-spacing: .1em;
+      }
+
+      .st6 {
+        display: none;
+      }
+
+      .st5 {
+        fill: none;
+      }
+
+      .st3 {
+        font-family: Memoir-90ms-RKSJ-H, Memoir;
+        font-size: 112px;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_2" data-name="レイヤー_2">
+    <g>
+      <polygon class="st0" points="554.94 513.17 530.68 476.94 487.67 484.14 523.91 459.88 516.71 416.87 540.97 453.11 583.97 445.9 547.74 470.16 554.94 513.17"/>
+      <polygon class="st0" points="301.95 263.18 293.65 227.36 256.96 229.8 283.83 204.7 263.37 174.15 298.54 184.87 314.77 151.88 323.07 187.7 359.76 185.26 332.89 210.36 353.35 240.91 318.18 230.19 301.95 263.18"/>
+      <polygon class="st0" points="673.81 607.33 697.27 595.38 693.15 569.37 711.78 587.99 735.24 576.03 723.28 599.5 741.91 618.12 715.9 614 703.94 637.47 699.82 611.45 673.81 607.33"/>
+      <polygon class="st0" points="555.18 847.72 563.13 827.8 546.65 814.08 568.05 815.49 576 795.58 581.27 816.36 602.67 817.78 584.53 829.21 589.8 850 573.32 836.28 555.18 847.72"/>
+      <g id="Asteroid">
+        <path class="st4" d="M696.35,184.29c-81.46,50.58-92.31,48.04-142.89-33.42,50.58,81.46,48.04,92.31-33.42,142.89,81.46-50.58,92.31-48.04,142.89,33.42-50.58-81.46-48.04-92.31,33.42-142.89Z"/>
+      </g>
+      <g>
+        <line class="st5" x1="328.16" y1="253.81" x2="561.5" y2="795.5"/>
+        <line class="st0" x1="328.16" y1="253.81" x2="561.5" y2="795.5"/>
+      </g>
+      <line class="st1" x1="561.49" y1="234.67" x2="356.1" y2="213.75"/>
+      <line class="st1" x1="549.5" y1="418.5" x2="593.61" y2="283.37"/>
+      <line class="st1" x1="675.5" y1="574.5" x2="570.35" y2="492.85"/>
+      <line class="st1" x1="687.5" y1="637.5" x2="591.5" y2="796.5"/>
+    </g>
+  </g>
+</svg>
