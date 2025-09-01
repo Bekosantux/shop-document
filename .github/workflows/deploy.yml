@@ -7,9 +7,16 @@ on:
       - main-preview
 
 jobs:
-  build:
-    name: Build
+  build-and-deploy-main:
+    name: Build and Deploy Main Site
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -26,28 +33,16 @@ jobs:
         with:
           path: build
 
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-    if: github.ref == 'refs/heads/main'
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
 
-  deploy-preview:
-    name: Deploy Preview to GitHub Pages
+  build-and-deploy-preview:
+    name: Build and Deploy Preview Site
     if: github.ref == 'refs/heads/main-preview'
+    runs-on: ubuntu-latest
     permissions:
       contents: write
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
