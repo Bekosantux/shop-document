@@ -26,11 +26,9 @@ jobs:
         with:
           path: build
 
-  # メインサイトのデプロイ（mainブランチのみ）
-  deploy-main:
-    name: Deploy Main Site
+  deploy:
+    name: Deploy to GitHub Pages
     needs: build
-    if: github.ref == 'refs/heads/main'
     permissions:
       pages: write
       id-token: write
@@ -43,9 +41,9 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-  # プレビューサイトのデプロイ（main-previewブランチのみ）
   deploy-preview:
-    name: Deploy Preview Site
+    name: Deploy Preview to GitHub Pages
+    needs: build
     if: github.ref == 'refs/heads/main-preview'
     permissions:
       contents: write
