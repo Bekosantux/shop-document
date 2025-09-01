@@ -18,7 +18,9 @@ const config = {
   url: 'https://bekosantux.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/shop-document/',
+  baseUrl: process.env.NODE_ENV === 'production' && process.env.GITHUB_REF === 'refs/heads/main-preview' 
+    ? '/shop-document/preview/' 
+    : '/shop-document/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
