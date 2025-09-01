@@ -27,14 +27,14 @@ const config = {
   organizationName: 'Bekosantux', // Usually your GitHub org/user name.
   projectName: 'shop-document', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   trailingSlash: true,
 
   i18n: {
     defaultLocale: 'ja',
-    locales: ['ja', 'en'],
+    locales: ['ja'],
   },
 
   presets: [
