@@ -14,8 +14,8 @@ sidebar_position: 4
 
 ## VRC Heart Rate
 <hr/>
-心音ギミックとは別に、VRC Heart Rateのメニューも自動的に追加されます。
-必要な場合はメニューの生成先を変更することが出来ます。[参考](https://modular-avatar.nadena.dev/ja/docs/reference/menu-installer#%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC)
+心音ギミックとは別に、VRC Heart Rateのメニューも自動的に追加されます。  
+必要な場合はメニューの追加先を変更することが出来ます。[参考](https://modular-avatar.nadena.dev/ja/docs/reference/menu-installer#%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC)
 
 - マニュアル版
   - `Heart Rate Manual Control`  

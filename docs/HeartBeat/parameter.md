@@ -5,11 +5,7 @@ sidebar_position: 7
 # パラメーターについて
 <hr/>
 
-VRC Heart Rateのパラメータについては[こちら](https://bekosantux.github.io/ShopDoc/category/placeholder/)をご覧ください。
-
-- HR (OSCのみ)  
-心拍数のInt値。0～255まで。  
-**改変におすすめです。** 寝落ち判定など、一定の心拍数を条件にするなどのギミックを組む際におすすめです。
+心拍数などを用いたギミックを自作したい場合は、[VRC Heart Rateのパラメーター](/ShopDoc/VRCHeartRate/development/#パラメーターについて)をご覧ください。
 
 - HBG/HRCounter_Bool  
 心拍計を表示するかどうかのBool値。

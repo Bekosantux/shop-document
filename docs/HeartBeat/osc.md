@@ -8,6 +8,9 @@ import TabItem from '@theme/TabItem';
 # OSC機能について
 <hr/>
 
+## 概要
+<hr/>
+
 :::caution
 2.0からアップデートする方へ  
 **OSC送信アプリが変更されました！** 3.0からはPulsoidとBLEの両方で共通のアプリを使用します。古いアプリは使用できませんのでご注意ください。  
