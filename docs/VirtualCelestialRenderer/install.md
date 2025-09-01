@@ -9,9 +9,9 @@ sidebar_position: 0
 - Unity 2022.3.22f1
 - VRCSDK 最新バージョン
 
-## Aセットの方は[こちら](../settings-a)
+## Aセットの方は[こちら](../Settings_A)
 
-## B、Cセットの方は[こちら](../settings-bc)
+## B、Cセットの方は[こちら](../Settings_BC)
 
 
 ![Showcase](contents/Showcase_0.png)

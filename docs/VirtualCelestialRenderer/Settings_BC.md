@@ -13,13 +13,13 @@ _BekoShop/VirtualCelestialRenderer/Main/Materials_ にある BかCの対応す�
 最後に、Cセットの場合はタブレットとポインターをワールド内の配置したい場所に移動してください。
 :::caution
 Cセットの場合、初回インポート時に Text Mesh Pro のダイアログが表示される場合があります。  
-必ず `import TMP Essentials` を選択してください。下の `Examples & Extras` は不要です。
+必ず "import TMP Essentials" を選択してください。下の "Examples & Extras" は不要です。
 :::
 
 ### 太陽を同期させる（任意）  {#synchronize-the-sun}
 太陽として動かしたいリアルタイムのディレクショナルライトを、  
-Bプレハブは `_VCR_B_Limited/Scripts/Sky`  
-Cプレハブは `_VCR_C_Full/VCR_ControlTablet/Controller/Sky`  
+Bプレハブは _VCR_B_Limited/Scripts/Sky  
+Cプレハブは _VCR_C_Full/VCR_ControlTablet/Controller/Sky  
 のオブジェクトに付いているスクリプトの Sun にアタッチしてください。
 指定されたライトは回転、色、明るさが自動制御されます。
 ![Sun](contents/SetTheSun.png)
@@ -94,8 +94,8 @@ Cセットの場合はタブレットからも変更可能です。
 ---
 ## スクリプト設定 {#script-settings}
 スクリプトはAセットには付属しません。  
-Bセットの場合は `_VRC_B_Limited/Controller_`  
-Cセットの場合は `_VCR_C_Full/VCR_ControlTablet/Controller_`  
+Bセットの場合は _VRC_B_Limited/Controller_  
+Cセットの場合は _VCR_C_Full/VCR_ControlTablet/Controller_  
 に格納されています。  
 
 設定が可能なスクリプトは以下の２つです。
