@@ -20,4 +20,4 @@ sidebar_position: 0
 1. または、GithubのReleaseからunitypackageをダウンロード可能です。  
    https://github.com/Bekosantux/vrc-heart-rate
 
-1. [VPMPackageAutoInstaller](https://github.com/anatawa12/VPMPackageAutoInstaller) を利用した [unitypackageインストーラ](/file/VRC%20Heart%20Rate%20Installer.unitypackage) を用意しています。
+1. [VPMPackageAutoInstaller](https://github.com/anatawa12/VPMPackageAutoInstaller) を利用した [unitypackageインストーラ](/../static/file/VRCHeartRateInstaller.unitypackage) を用意しています。
