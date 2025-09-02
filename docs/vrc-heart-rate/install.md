@@ -17,7 +17,8 @@ sidebar_position: 0
 1. VPMよりインストール出来ます。  
    https://bekosantux.github.io/vpm-repos/
 
-1. または、GithubのReleaseからunitypackageをダウンロード可能です。  
+1. GithubのReleaseからunitypackageをダウンロード可能です。  
    https://github.com/Bekosantux/vrc-heart-rate
 
-1. [VPMPackageAutoInstaller](https://github.com/anatawa12/VPMPackageAutoInstaller) を利用した [unitypackageインストーラ](./asset/VRCHeartRateInstaller.unitypackage) を用意しています。
+1. [VPMPackageAutoInstaller](https://github.com/anatawa12/VPMPackageAutoInstaller) を利用した [unitypackageインストーラ](pathname:///file/VRCHeartRate_Installer.unitypackage) を用意しています。
+   インポートすると、自動的に最新のVRC Heart Rateがインストールされます。

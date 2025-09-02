@@ -1,18 +1,18 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # 開発者向け情報
-<hr/>
+---
 
 このページでは、アバターギミックの開発者向けの情報を提供します。
 
 ## ギミックの開発
-<hr/>
+---
 
 ### スクリプトの設定
 最初に、コア機能を自動的にインストールするためのスクリプトを設定します。これがないとギミックが動きません！  
-1. *"Packages/VRC Heart Rate/Assets" にある `SampleScript` プレハブを開き、 `Auto Module Placer` コンポーネントをコピーする。  
+1. *"Packages/VRC Heart Rate/Assets" にある `SampleScript` プレハブを開き、 `Auto Module Placer` コンポーネントをコピーします。  
     マニュアル操作版の場合は `_Manual` が付いている方をコピーします。
 
 1. ギミックのルートオブジェクトに「新しいコンポーネントとして貼り付け」します。
