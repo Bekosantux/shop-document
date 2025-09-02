@@ -5,7 +5,7 @@ sidebar_position: 7
 # パラメーターについて
 ---
 
-心拍数などを用いたギミックを自作したい場合は、[VRC Heart Rateのパラメーター](/shop-document/vrc-heart-rate/development/#パラメーターについて)をご覧ください。
+心拍数などを用いたギミックを自作したい場合は、[VRC Heart Rateのパラメーター](/vrc-heart-rate/development/#パラメーターについて)をご覧ください。
 
 - HBG/HRCounter_Bool  
 心拍計を表示するかどうかのBool値。

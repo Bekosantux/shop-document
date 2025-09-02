@@ -8,10 +8,14 @@ sidebar_position: 2
 ## 概要
 ---
 
+
+:::note
+心音ギミックの使用に必須ではありません。
+:::
 :::caution
 2.x.xからアップデートする方へ  
 **OSC送信アプリが変更されました！** 3.0からはPulsoidとBLEの両方で共通のアプリを使用します。古いアプリは使用できませんのでご注意ください。  
-古いアバターでも使用する方法を [**こちら**](/vrc-heart-rate/vrcosc/#old-avatar) で案内しています。
+古いアバターでも使用する方法を [**こちら**](#old-avatar) で案内しています。
 :::
 
 心拍数をVRChatに送信することで、心拍数をリアルタイムでアバターと同期させることができます。  
@@ -31,10 +35,6 @@ MibandやApple Watchなどのスマートウォッチをお持ちの場合は、
 よろしければこちらも参考にしてください。  
 [VRChatに心拍数を送る時の環境メモ](https://note.com/bekosan/n/nf6a976867771)
 
-:::note
-心音ギミックの使用に必須ではありません。
-:::
-
 ## [OSCの設定方法はこちら](/vrc-heart-rate/vrcosc)
 
 
@@ -44,7 +44,7 @@ MibandやApple Watchなどのスマートウォッチをお持ちの場合は、
 :::warning
 この回避策は一時的なものにとどめ、できるだけ早く全てのアバターを更新することをおすすめします。
 :::
-1. Modulesタブを開き、PulsoidとBLEの使用する方のチェーンマークをクリックします。
+1. Modulesタブを開き、PulsoidかBLEの使用する方のチェーンマークをクリックします。
 
 1. Average欄のNameを `HR` に変更します。
 ![](contents/VRCOSC_Parameter.png)
