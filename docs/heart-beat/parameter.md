@@ -3,7 +3,7 @@ sidebar_position: 7
 ---
 
 # パラメーターについて
-<hr/>
+---
 
 心拍数などを用いたギミックを自作したい場合は、[VRC Heart Rateのパラメーター](/shop-document/vrc-heart-rate/development/#パラメーターについて)をご覧ください。
 

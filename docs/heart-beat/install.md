@@ -3,16 +3,23 @@ sidebar_position: 1
 ---
 
 # 導入方法
-<hr/>
-## 導入に必要なもの
+---
+
+## 導入に必要なもの {#requirements}
 - Unity 2022.3.22f1
-- VRCSDK 最新バージョン
-- Modular Avatar 最新バージョン
-- VRC Heart Rate 最新バージョン
+- VRChat Avatar SDK3: 最新バージョン
+- [Modular Avatar](https://modular-avatar.nadena.dev/ja): 最新バージョン  
+- [VRC Heart Rate](/vrc-heart-rate/install/): 最新バージョン 
 
 ## 手順
-1. *BekoShop/HeartBeat_Gimmick/Prefabs* の中にあるプレハブをアバター直下に配置します。OSC機能を利用する場合は `HeartBeat_OSC`、そうでなければ `HeartBeat_Manual` プレハブを選択してください。  
-プレハブをアバター内に配置すると、`VRCHeartRate_Core` というプレハブが自動的に同階層に配置されます。このプレハブは心音ギミックの動作に必須なので、削除しないでください。このプレハブはアバター内であればどこに動かしても問題ありません。
+1. Boothからダウンロードしたzipファイルを開き、展開します。
+1. [導入に必要なもの](#requirements) を全てインポートします。
+1. `なめらか心音ギミック_v3.x.x.unitypackage` をインポートします。  
+**v2.x.xからアップデートする方は、プロジェクトの *BekoShop/HeatBeat_Gimmick* を削除してからインポートしてください。**
+1. *BekoShop/HeartBeatGimmick/Prefabs/* フォルダを選択し、`HeatBeat_...` プレハブをアバター内にD&Dします。  
+OSC機能を利用する場合は `_OSC`、そうでなければ `_Manual` プレハブを選択してください。  
+1. D&Dした同階層に `VRCHeartRate_Core` プレハブが自動で追加されます。（既にアバター内にある場合は追加されません）  
+このプレハブはギミックの動作に必須なので削除しないで下さい。アバター内であればどこに動かしても問題ありません。
 
 1. プレハブ内の **`AudioSources`(プレハブ本体ではない)** をアバターの胸の少し下あたりに配置します。  
 とりあえず配置しておき、後でVRChat内での範囲調整をすることをおすすめします。  
@@ -23,7 +30,7 @@ sidebar_position: 1
 
 1. **`HR_Counter`** をほっぺたや頭上など心拍数を表示したい場所に配置します。デフォルトではHeadボーンに追従する設定になっています。  
 デフォルトでは表示されたままですが、心拍数が0の場合は自動で非表示になります。  
-ステンシルを設定すると、顔や髪に隠れるのを防ぐことが可能です。[参考](https://lilxyzw.github.io/lilToon/ja_JP/advanced/stencil.html)
+ステンシルを設定すると、顔や髪に埋まって隠れるのを防ぐことが可能です。[参考](https://lilxyzw.github.io/lilToon/ja_JP/advanced/stencil.html)
 ![心拍計の配置](contents\HBSetting_b.png)
 
 :::caution

@@ -3,7 +3,11 @@ sidebar_position: 4
 ---
 
 # パイメニュー
-<hr/>
+---
+
+## ギミック本体
+---
+
 ![Menu](contents\PiMenu.png)
 - 心拍計: 心拍数カウンターの表示を切り替えます。
 - 心拍計明滅: 心拍計の明滅をするかどうかを切り替えます。
@@ -13,7 +17,8 @@ sidebar_position: 4
 - 心音範囲調整: 心音が聞こえる範囲を調整します。調整している間、**自分にだけ見える球体**が出るので、それを目安にしてください。
 
 ## VRC Heart Rate
-<hr/>
+---
+
 心音ギミックとは別に、VRC Heart Rateのメニューも自動的に追加されます。  
 必要な場合はメニューの追加先を変更することが出来ます。[参考](https://modular-avatar.nadena.dev/ja/docs/reference/menu-installer#%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC)
 
