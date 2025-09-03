@@ -23,7 +23,7 @@ sidebar_position: 4
 必要な場合はメニューの追加先を変更することが出来ます。[参考](https://modular-avatar.nadena.dev/ja/docs/reference/menu-installer#%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC)
 
 - マニュアル版
-  - `Heart Rate Manual Control`  
+  - `Heart Rate`  
   心拍数をラジアルパペットで手動で変更します。
 
 - OSC版(パラメータ削減を有効にするとメニューは生成されません)
