@@ -12,7 +12,7 @@ sidebar_position: 2
 
 ### スクリプトの設定
 最初に、コア機能を自動的にインストールするためのスクリプトを設定します。これがないとギミックが動きません！  
-1. *"Packages/VRC Heart Rate/Assets" にある `SampleScript` プレハブを開き、 `Auto Module Placer` コンポーネントをコピーします。  
+1. *"Packages/VRC Heart Rate/Assets"* にある `SampleScript` プレハブを開き、 `Auto Module Placer` コンポーネントをコピーします。  
     マニュアル操作版の場合は `_Manual` が付いている方をコピーします。
 
 1. ギミックのルートオブジェクトに「新しいコンポーネントとして貼り付け」します。
