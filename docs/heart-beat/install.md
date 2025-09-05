@@ -13,7 +13,7 @@ sidebar_position: 1
 
 ## 手順
 1. Boothからダウンロードしたzipファイルを開き、展開します。
-1. [導入に必要なもの](#requirements) を全てインポートします。
+1. [導入に必要なもの](#requirements) を全てインポートします。[VRC Heart Rate](/vrc-heart-rate/install/)の入れ忘れが多発しております！ご注意下さい。
 1. `なめらか心音ギミック_v3.x.x.unitypackage` をインポートします。  
 **v2.x.xからアップデートする方は、プロジェクトの *BekoShop/HeatBeat_Gimmick* を削除してからインポートしてください。**
 1. *BekoShop/HeartBeatGimmick/Prefabs/* フォルダを選択し、`HeatBeat_...` プレハブをアバター内にD&Dします。  
