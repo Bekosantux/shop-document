@@ -12,6 +12,7 @@ sidebar_position: 1
 
 ## 手順
 ---
+1. [導入に必要なもの](#requirements) を全てインポートします。[VRC Heart Rate](/vrc-heart-rate/install/)の入れ忘れが多発しております！ご注意下さい。
 1. *"BekoShop/CardiogramHalo"* の中にある "CardiogramHalo_..." プレハブをアバター直下に配置します。  
     OSC心拍計を使用する場合は `_OSC`, そうでない場合は `_Manual` プレハブを使用してください。
 1. `HeadAnchor` オブジェクトの位置、回転、スケールを調整します。
@@ -25,6 +26,10 @@ sidebar_position: 1
 ---
 ### ヘイローの太さを変える
 `CardiogramHalo/HeadAnchor/Base/ParticleRoot/Particle` のスケールを変更します。
+
+### 透過を有効にする
+`CardiogramHalo/HeadAnchor/Base/ParticleRoot/Particle` の `Particle System` コンポーネントの `レンダラー` タブで **トレイルマテリアル** をTransparentマテリアルに変更します。  
+このマテリアルは透明度が変更可能な他、顔（カメラ）を近づけるとフェードアウトする機能が付いています。
 
 ### その他
 `MA Parameter` コンポーネントの初期値を変えることでヘイローに関する設定が可能です。
