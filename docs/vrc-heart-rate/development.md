@@ -2,6 +2,9 @@
 sidebar_position: 3
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # 開発者向け情報
 ---
 
@@ -19,6 +22,7 @@ sidebar_position: 3
 
 1. 開発者向け設定を開き、結合するアニメーターレイヤーに応じてチェックボックスを付けます。  
     (基本的には "FX" のみになると思いますが、例えば呼吸アニメーションは "Additive" になります。)
+    ![AutoModulePlacer](contents/auto-module-placer.png)
 
 1. 「オプションが一つも配置されていません。」警告が消えたら、「強制チェック＆配置ボタン」を押します。  
     `OSCHeartRate_Core` プレハブが同階層に出現し、その子に指定したレイヤー名のオブジェクトが生成されたら成功です。
@@ -58,7 +62,25 @@ sidebar_position: 3
   - 型: Float
   - 説明: Direct Blend Tree を有効化するために使用されます。
 
+<details>
+<summary>パラメーターのリスト</summary>
+
 *"Packages/VRC Heart Rate/Assets/Prefabs"* にある `VRCHeartRate_Core` のプレハブに、完全なパラメーターのリストがあります。
+<Tabs>
+    <TabItem value="osc-default" label="OSC（デフォルト）">
+    ![Parameters_OSC_Default](contents/parameters-osc-default.png)
+    </TabItem>
+    <TabItem value="osc-reduced" label="OSC（パラメーター数削減）">
+    ![Parameters_OSC_Reduced](contents/parameters-osc-reduced.png)
+    </TabItem>
+    <TabItem value="manual" label="マニュアル">
+    ![Parameters_Manual](contents/parameters-manual.png)
+    </TabItem>
+
+</Tabs>
+
+
+</details>
 
 ### 注意事項
 VRC Heart Rate を用いたギミックを公開する際は、必ず

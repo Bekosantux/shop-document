@@ -21,7 +21,7 @@ toc_max_heading_level: 2
 - プレハブ `VRCHeartRate_Core_Manual`
   - オブジェクト名 `VRCMenu` → `VRCMenu_VRCHeartRate`
   - メニュー名 `Heart Rate Manual Control` → `Heart Rate`
-- プレハブ `VRCHeartRate_OSC`
+- プレハブ `VRCHeartRate_Core`
   - オブジェクト名 `VRCMenu` → `VRCMenu_VRCHeartRate`
 
 ## 2025/9/3 v1.0.0
