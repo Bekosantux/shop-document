@@ -47,11 +47,15 @@ import TabItem from '@theme/TabItem';
         :::note
         Bluetooth Low Energy（BLE）に対応した心拍計が必要です。
         :::
+        :::caution
+        マザーボード内蔵のBluetoothアンテナでは接続できなかったり、不安定になる場合があります。  
+        USBドングルを購入して使用することをおすすめします。
+        :::
         
         <hr/>
 
         1. WindowsにBLE心拍計をペアリングします。  
-        :::caution
+        :::note
         Windows11 22H2, 23H2の場合、「Bluetoothデバイスの検出」設定を「詳細」に変更してください。  
         24H2では、Bluetoothデバイスの検索で、Bluetoothデバイスのリストを下にスクロールして「すべてのデバイスを表示」を選択してください。
         :::
@@ -64,6 +68,10 @@ import TabItem from '@theme/TabItem';
         1. Runタブを開き、緑色の再生ボタンを押して起動します。
     </TabItem>
 </Tabs>
+
+**最後に、VRChatのパイメニュー（円形のもの）を開き、  
+オプション > アバター > OSC > 有効  
+をオンにします。**
 
 ## VRCOSC おすすめ設定
 <hr/>
