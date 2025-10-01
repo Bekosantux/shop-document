@@ -87,4 +87,8 @@ OSC機能を利用する場合は `_OSC`、そうでなければ `_Manual` プ�
 <iframe src="https://www.youtube.com/embed/C5gtQQ9TYmc" title="心音サンプル" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 ### 心拍数カウンターの見た目の変え方
-BekoShop/HeartBeat_Gimmick/RED_SIM_mod/Materials にあるマテリアルと入れ替えることで見た目を変えることができます。
+BekoShop/HeartBeat_Gimmick/RED_SIM_mod/Materials にあるマテリアルと入れ替えることで見た目を変えることができます。  
+
+また、明滅の対象はマテリアルの `Color Additive Target` から  
+ハートのみ/数字のみ/両方を光らせる  
+に変更可能です。
