@@ -13,13 +13,16 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
     <TabItem value="common" label="共通">
-        1. VRCOSCの設定
-            1. https://github.com/VolcanicArts/VRCOSC/releases/latest  
-            から **VRCOSCSetup.exe** をダウンロード
+        ## VRCOSCの設定
+        1. https://github.com/VolcanicArts/VRCOSC/releases/latest  
+        から **VRCOSCSetup.exe** をダウンロード
 
-            1. インストールが完了したらアプリを起動します。起動したはずなのにウィンドウが出ない場合は、タスクバー右の隠れているアイコンを表示するボタンを押してみてください。  
-            ![](contents/VRCOSC_Taskbar.png)  
-            もし、VRCOSCのアイコンが2つ以上ある場合は多重起動で不具合の原因となるので、残り1つになるまで右クリックから終了してください。
+        1. .NET Desktop Runtimeのインストールを求められる場合があります。指示に従ってサイトを開き、Coreランタイム(x64)をインストールしてください。
+        ![](contents/dot-net-core.png)
+
+        1. インストールが完了したらアプリを起動します。起動したはずなのにウィンドウが出ない場合は、タスクバー右の隠れているアイコンを表示するボタンを押してみてください。  
+        ![](contents/VRCOSC_Taskbar.png)  
+        もし、VRCOSCのアイコンが2つ以上ある場合は多重起動で不具合の原因となるので、残り1つになるまで右クリックから終了してください。
     </TabItem>
 </Tabs>
 
@@ -75,15 +78,20 @@ import TabItem from '@theme/TabItem';
 
 ## VRCOSC おすすめ設定
 <hr/>
-Settingsタブを開きます。
-- General
-  - Tray
-    - Send To Tray On Close: ☑
-    - Start In Tray: ☑
-- Behavior
-  - Modules
-    - Run With VRChat: ☑
-    - Stop With VRChat: ☑
-- Speech (使用しない場合)
-  - Configure
-    - Enable Speech Engine: □
+1. 使用しない場合はモジュールを削減することが出来ます。
+    - Packagesタブを開きます。
+    - Official Modulesをアンインストールすると、モジュールがBluetoothのみになります。  
+
+1. 不要な機能をオフにします。
+    - Settingsタブを開きます。
+    - General
+    - Tray
+        - Send To Tray On Close: ☑
+        - Start In Tray: ☑
+    - Behavior
+    - Modules
+        - Run With VRChat: ☑
+        - Stop With VRChat: ☑
+    - Speech (使用しない場合)
+    - Configure
+        - Enable Speech Engine: □
