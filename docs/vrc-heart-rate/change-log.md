@@ -5,6 +5,12 @@ toc_max_heading_level: 2
 
 # 更新履歴
 
+## 2025/12/15 v1.0.5
+---
+### 修正
+- Additiveレイヤーを使用しているギミック（特に呼吸アニメーションなど）が存在する場合、Sit判定でVRC Heart Rateを使用したギミックが壊れることがある問題を修正
+- パラメータ名を `VCRHR/Local_Trigger` から `VRCHR/Local_Trigger` に変更（タイポ）
+
 ## 2025/9/21 v1.0.4
 ---
 ### 修正
