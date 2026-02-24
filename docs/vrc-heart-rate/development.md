@@ -47,7 +47,7 @@ import TabItem from '@theme/TabItem';
     例えば、心拍数が60bpmの場合、1秒で0から1まで変化し、次の1秒でまた0に戻ります。
 
 - `VRCHR/Local_Trigger`
-  - 型: Bool
+  - 型: Trigger
   - 説明: 鼓動の1ループの開始時に1フレームのみTrueになります。  
     確実に1ループの開始を検知したい場合に使用できます。
 
