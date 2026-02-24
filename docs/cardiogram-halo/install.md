@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # 導入方法
 ---
-## 導入に必要なもの
+## 導入に必要なもの  {#requirements}
 - Unity 2022.3.22f1
 - VRCSDK 最新バージョン
 - Modular Avatar 最新バージョン
-- [VRC Heart Rate](/category/vrc-heart-rate/) 最新バージョン
+- [VRC Heart Rate](/vrc-heart-rate/install/) 最新バージョン
 
 ## 手順
 ---
@@ -29,7 +29,8 @@ sidebar_position: 1
 
 ### 透過を有効にする
 `CardiogramHalo/HeadAnchor/Base/ParticleRoot/Particle` の `Particle System` コンポーネントの `レンダラー` タブで **トレイルマテリアル** をTransparentマテリアルに変更します。  
-このマテリアルは透明度が変更可能な他、顔（カメラ）を近づけるとフェードアウトする機能が付いています。
+このマテリアルは透明度が変更可能な他、顔（カメラ）を近づけるとフェードアウトする機能が付いています。  
+ただし、透過を有効にすると被写界深度（カメラのボケ）が背景と同じになります。
 
 ### その他
 `MA Parameter` コンポーネントの初期値を変えることでヘイローに関する設定が可能です。
