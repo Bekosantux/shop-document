@@ -69,6 +69,9 @@ import TabItem from '@theme/TabItem';
         1. その下のModulesタブを開き、Bluetooth Heartrateにチェックを入れます。
 
         1. Runタブを開き、緑色の再生ボタンを押して起動します。
+
+        1. 心拍計デバイスを選択します。
+        ![](contents/VRCOSC_BLEDevice.png)
     </TabItem>
 </Tabs>
 
