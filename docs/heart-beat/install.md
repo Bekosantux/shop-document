@@ -30,16 +30,31 @@ OSC機能を利用する場合は `_OSC`、そうでなければ `_Manual` プ�
 
 1. **`HR_Counter`** をほっぺたや頭上など心拍数を表示したい場所に配置します。デフォルトではHeadボーンに追従する設定になっています。  
 デフォルトでは表示されたままですが、心拍数が0の場合は自動で非表示になります。  
-ステンシルを設定すると、顔や髪に埋まって隠れるのを防ぐことが可能です。[参考](https://lilxyzw.github.io/lilToon/ja_JP/advanced/stencil.html)
-![心拍計の配置](contents\HBSetting_b.png)
 
 :::caution
 心拍数カウンターのTransform(特にスケール)を変更する場合、HeartRateCounterの子であるHR_Counterの方を変更してください。  
 どちらかのXYZスケールが揃っていないと、大きく歪んでしまう場合があります。
 :::
 
+<div style={{ textAlign: 'center', fontSize: '2.0rem', fontWeight: 700 }}>
+  導入完了！
+</div>
 
-**導入完了！**
+<details>
+    <summary>心拍数カウンターのステンシル設定</summary>
+    
+    ステンシルを設定すると、顔や髪に埋まって隠れるのを防ぐことが可能です。[参考](https://lilxyzw.github.io/lilToon/ja_JP/advanced/stencil.html)
+    ![心拍計の配置](contents\HBSetting_b.png)
+
+    設定例:  
+    - カウンター側のマテリアル設定は変更しなくても大丈夫です。
+    - 髪などのマテリアルを以下のように変更します。
+      - `Render Queue`: 2452 以上
+      - `Ref`: 1
+      - `Comp`: NotEqual  
+    ![ステンシル設定例](contents\HBSetting_Stencil.png)
+
+</details>
 
 <details>
     <summary>心拍数カウンターを別の場所にも置きたい場合は？</summary>
