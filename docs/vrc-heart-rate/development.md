@@ -86,4 +86,4 @@ import TabItem from '@theme/TabItem';
 VRC Heart Rate を用いたギミックを公開する際は、必ず
 - VRC Heart Rate のインストールを促してください。
 - Boothの商品ページなどに当アセットをインストールするためのリンクを記載してください。
-- ダウンロードファイルに [unitypackage版のインストーラ](/file/VRC%20Heart%20Rate%20Installer.unitypackage) を同梱してください。このパッケージをインポートすると、自動的に最新版がインストールされます。
+- ダウンロードファイルに [unitypackage版のインストーラ](pathname:///file/VRCHeartRate_Installer.unitypackage) を同梱してください。このパッケージをインポートすると、自動的に最新版がインストールされます。
