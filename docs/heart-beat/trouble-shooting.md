@@ -57,7 +57,7 @@ VRChat側でアバター内音源の同時再生数に制限が掛けられて�
   - または、2.x.xの古いアプリと競合している可能性があります。古いアプリは削除して下さい。
 
 ### 心拍数カウンターが細かく点滅する
-[こちら](../vrc-heart-rate/trouble-shooting#irregular-signal)を参照してください。
+[こちら](/vrc-heart-rate/trouble-shooting#irregular-signal)を参照してください。
 
 ## トラブルシューティング
 ---
