@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">撮影の流れ | BekoShop Document Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://shop.beko.ooo/avagraphy/photographing/"><meta data-rh="true" property="og:locale" content="ja"><meta data-rh="true" name="docusaurus_locale" content="ja"><meta data-rh="true" name="docsearch:language" content="ja"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="撮影の流れ | BekoShop Document Site"><meta data-rh="true" name="description" content="---"><meta data-rh="true" property="og:description" content="---"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://shop.beko.ooo/avagraphy/photographing/"><link data-rh="true" rel="alternate" href="https://shop.beko.ooo/avagraphy/photographing/" hreflang="ja"><link data-rh="true" rel="alternate" href="https://shop.beko.ooo/avagraphy/photographing/" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"📷️ Avagraphy (β)","item":"https://shop.beko.ooo/category/️-avagraphy-β"},{"@type":"ListItem","position":2,"name":"撮影の流れ","item":"https://shop.beko.ooo/avagraphy/photographing"}]}</script><link rel="stylesheet" href="/assets/css/styles.1a0ff47e.css">
-<script src="/assets/js/runtime~main.78f82d56.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.4c1b9229.js" defer="defer"></script>
 <script src="/assets/js/main.e53e8d9c.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -20,10 +20,16 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="background">背景画像を読み込む<a href="#background" class="hash-link" aria-label="背景画像を読み込む への直接リンク" title="背景画像を読み込む への直接リンク" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>Background</strong> カテゴリから背景にしたい画像を読み込みます。</li>
-<li class="">デジカメ等で撮影した場合はExif(写真のメタデータ)に <strong>35mm換算焦点距離</strong> が記録されていることが多いので、自動で設定されます。
-スマホの写真やexif情報が欠けている場合は手動で設定する必要があります。<br>
-<a href="https://flowercamera.net/how-to-check-pixel-photo-zoom-in-exif/" target="_blank" rel="noopener noreferrer" class="">Android</a>での確認方法はリンク先を確認してください。<br>
-<!-- -->iPhoneは一般的には記録されている場合が多いです。</li>
+<li class="">通常はExif(写真のメタデータ)に <strong>35mm換算焦点距離</strong> が記録されているので、自動で設定されます。
+Exif情報が欠けている場合は手動で設定する必要があります。<br>
+<!-- -->Windowsの <strong>スマートフォン連携</strong> アプリ、<strong>Discord</strong> など、スマホ→PCの転送手段によってはExif情報が欠落する場合があります。その場合は、他の送信方法を試してください。</li>
+</ul>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Exifが欠落している、または記録されていない場合</summary><div><div class="collapsibleContent_i85q"><ul>
+<li class=""><a href="https://flowercamera.net/how-to-check-pixel-photo-zoom-in-exif/" target="_blank" rel="noopener noreferrer" class="">Android</a>での確認方法はリンク先を確認してください。</li>
+<li class="">iPhoneは標準のギャラリーアプリで表示される <code>xx mm</code> が35mm換算焦点距離です。</li>
+<li class="">一眼レフなどのカメラは、レンズのスペックとセンサーサイズから計算する必要があります。</li>
+</ul><p>確認した焦点距離を <strong>Camera</strong> カテゴリの <code>焦点距離</code> に入力してください。</p></div></div></details>
+<ul>
 <li class="">fSpyについて<br>
 <!-- -->fSpyは写真からカメラの位置や回転を推定するツールです。写真の消失点がはっきりしている場合、正確にカメラの位置と回転を推定してくれます。<br>
 <a href="" class="">外部アプリを使用します。詳しくはこちら</a></li>
@@ -56,20 +62,23 @@
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="contact-shadow">接触影を調整する (任意)<a href="#contact-shadow" class="hash-link" aria-label="接触影を調整する (任意) への直接リンク" title="接触影を調整する (任意) への直接リンク" translate="no">​</a></h2>
 <ul>
+<li class="">接触影は、<code>落影床</code> オブジェクトとアバターメッシュの近さによって影を表示する機能です。<br>
+<!-- -->例えば、足元と地面の近くが暗くなる現象を再現する事ができます。今後、床以外のオブジェクトにも対応予定です。</li>
 <li class=""><strong>Contact Shadow</strong> カテゴリから、接触影の設定を行います。<!-- -->
 <ul>
-<li class="">バイアス: 接触の計算位置のオフセット</li>
-<li class="">最長距離: 接触面からどの範囲までを接触影の対象とするか</li>
-<li class="">減衰: 接触面からの距離に応じた影の減衰</li>
-<li class="">Blur Size: 接触影のぼかし具合</li>
+<li class="">バイアス: 接触の計算位置のオフセット。あまり触りません。</li>
+<li class="">最長距離: 接触面からどの範囲までを接触影の対象とするか。長くするほど床から遠くまで反映されるようになります。</li>
+<li class="">減衰: 接触面からの距離に応じた影の減衰。</li>
+<li class="">Blur Size: 接触影のぼかし具合。</li>
 <li class="">Blue Iterations: 接触影の品質。大きいほど綺麗になりますが、重くなります。</li>
 </ul>
 </li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="occlusion">アバターを遮蔽する (任意)<a href="#occlusion" class="hash-link" aria-label="アバターを遮蔽する (任意) への直接リンク" title="アバターを遮蔽する (任意) への直接リンク" translate="no">​</a></h2>
+<p>遮蔽体をアバターの前に置くことで、アバターを遮蔽を再現することが出来ます(=アバターが透過して背景画像が見える)。<br>
+<!-- -->例えば、アバターの立ち位置の前に柱がある場合、Cylinderオブジェクトを置くことでアバターが柱に遮られているような写真を撮ることができます。</p>
 <ul>
-<li class=""><strong>Occluder</strong> カテゴリから、アバターの前に置くことでアバターを遮蔽する(=透過して背景が見える)オブジェクトを生成できます。</li>
-<li class=""><code>形状</code> から任意の形の遮蔽体を選び、生成してください。</li>
+<li class=""><strong>Occluder</strong> カテゴリの <code>形状</code> から任意の形の遮蔽体を選び、生成してください。</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="reflection">反射面を配置する (任意)<a href="#reflection" class="hash-link" aria-label="反射面を配置する (任意) への直接リンク" title="反射面を配置する (任意) への直接リンク" translate="no">​</a></h2>
 <ul>
@@ -83,7 +92,7 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="postprocess">ポストプロセスを調整する<a href="#postprocess" class="hash-link" aria-label="ポストプロセスを調整する への直接リンク" title="ポストプロセスを調整する への直接リンク" translate="no">​</a></h2>
 <ul>
 <li class=""><strong>PostProcess</strong> カテゴリのフィールドをダブルクリックし、ポストプロセスの設定を開きます。<br>
-<!-- -->ポストプロセスはアバターから背景には影響を与えますが、逆はありません。（例えば、Bloomは背景に適用されません）</li>
+<!-- -->ポストプロセスはアバターから背景には影響を与えますが、逆はありません。（例えば、アバターのBloomは背景に滲みますが、逆はありません）</li>
 <li class="">各項目の左上のチェックボックスで有効/無効を切り替えられます。<!-- -->
 <ul>
 <li class="">Bloom: 光のにじみ。オールドレンズで撮影した写真等で特に馴染みます。</li>
@@ -98,7 +107,7 @@
 <li class="">Contrast: 全体のコントラストを調整します。</li>
 </ul>
 </li>
-<li class="">Grain: ノイズ。少し乗せると写真っぽさが増します。<!-- -->
+<li class="">Grain: ノイズ。少し乗せると写真らしさが増します。<!-- -->
 <ul>
 <li class="">Colored: ノイズがカラーになります。</li>
 <li class="">Intensity: ノイズの強さを調整します。</li>
